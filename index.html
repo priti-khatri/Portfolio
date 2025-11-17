@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF6E75V6DM"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+
+       gtag('config', 'G-SF6E75V6DM');
+    </script>
+
     <meta charset="UTF-8">
     <title> Priti Khatri Portfolio </title>
     <link rel="stylesheet" href="style.css">
@@ -22,6 +32,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Experience</a></li>
           <li><a href="#services">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
@@ -45,7 +56,7 @@
      <div class="text">
        <div class="text-one">Hello,</div>
        <div class="text-two">I'm Priti Khatri</div>
-       <div class="text-three">Software Engineer & Data Strategy Enthusiast</div>
+       <div class="text-three">Data & AI Associate</div>
        <div class="text-four">From Pune, India</div>
      </div>
      <div class="button">
@@ -63,7 +74,7 @@
       <img src="images/doodle-1.png" alt="">
     </div>
     <div class="right">
-      <div class="topic">Hello 👋🏽</div>
+      <div class="topic">Hi 👋🏽</div>
       <p>
 	<!-- I'm Priti, a coffee lover ☕, 24-year-old Software Engineer. I hold a 4-year B.Tech degree in Computer Science and Engineering from <b>Rajasthan Institute of Engineering, Jaipur</b>.<br>
 	I started creating cool web designs using HTML and CSS back in 2017. I am a Data Enthusiast and extremely passionate about coding.
@@ -71,7 +82,7 @@
 	<br> -->
     I’m Priti, a Software Engineer 💻 who loves finding stories in data 💙. <br>
     I started my career in Investment Banking tech, where I learned how powerful clean data and automation can be for decision-making.<br><br>
-    Now, I’m focused on the space where data meets business strategy- whether it’s building a predictive model, visualizing metrics, or simplifying a complex dataset, I’m happiest when I’m turning numbers into something that actually moves the needle.</p>
+    I am focused on the space where data meets business strategy- whether it’s building a predictive model, visualizing metrics, or simplifying a complex dataset, I’m happiest when I’m turning numbers into something that actually moves the needle.</p><br>
       <div class="button">
         <button>Download CV</button>
       </div>
@@ -81,105 +92,73 @@
 </section>
 
 <!-- My Skills Section Start -->
-<!-- Section Tag and Other Div will have same CSS -->
 <section class="skills" id="skills">
- <div class="content">
-   <div class="title"><span>My Skills & Experiences</span></div>
-   <div class="skills-details">
-   <div class="text">
-       <div class="topic"><h3>Internships/Experience</h3></div>
-	   <div class="experience">
-         	<div class="num">✒️</div>
-         	<div class="exp">Software Engineer <br> Credit Suisse | Nov-2021 --Present</div>
-      	   </div>
-		<p>
-		• Implemented a process to obtain sanctioned vendors from third-party systems, effectively reducing risk and ensuring compliance with regulations.<br>
-		• Worked as a Business Analyst, collaborated with cross-functional teams to achieve project goals and deliver high-quality results.<br>
-		• Involved in Parent bank merger activities, working closely with UBS teams.<br>
-		• Enhanced various processes within the Payments domain of a bank, streamlining operations and reducing manual tasks for increased efficiency.<br>
-		• Contributed to the adoption of agile methodologies, utilizing GIT, Jira and Confluence, improving team productivity by 15% through iterative development cycles.<br>
-		• Acquired a comprehensive understanding of the entire P2P cycle of payments, as well as a thorough comprehension of how fintech operates within the financial industry.<br>
-		• Worked in a small, highly efficient team to successfully achieve project goals and objectives within tight deadlines.<br>
-		• Successfully mentored and provided functional and technical training to 4 individuals ensure their successful integration and development within the team.<br>
-		• Designed, developed, and implemented a comprehensive fraud analysis process focused on financial crime prevention. Utilized ERP Peoplesoft data, established criteria and algorithms to detect and prevent fraudulent payments. 
-		  Integrated system with datalake for advanced analytics and reporting capabilities.<br>
-		• Optimized MySQL database queries, reducing page load times by 20% and enhancing overall application performance.<br>
-		<br>
-		</p>
-		<br>
+  <div class="content">
+    <div class="title"><span>My Skills & Experiences</span></div>
 
-	   
-           <div class="experience">
-         	<div class="num">✒️</div>
-         	<div class="exp">Virtual Engineering Program <br> Goldman Sachs | Jun-July 2020</div>
-      	   </div>
-		<p>As a virtual participant I have :<br>
-		-Experience what it's like to work in the Engineering division at Goldman Sachs<br>
-		-Gain skills in basic cryptography, system engineering.<br>
-		-Develop critical engineering skills.</p>
-		<br>
-      
-	   <div class="experience">
-           	<div class="num">✒️</div>
-           	<div class="exp">Content Writer <br> Fashiana | Aug-Dec 2019</div>
-    	   </div>
-		<p>-Maintain all the content visible on the website.<br>
-		-Responded to email inquiries from clients regarding the progress of their orders.</p>
-  		<br>
+    <div class="skills-details">
 
-     	   <div class="experience">
-                <div class="num">✒️</div>
-                <div class="exp">Summer Intern <br> Swachh Bharat Abhiyan | Jun-July 2018</div>
-      	   </div>
-	        <p>-Made a magnificent contribution to Swachhata Revolution and contributed more than 100 hrs in door-to-door meetings, waste collection drives, organizing rallies and awareness campaigns</p>
-     </div>
+      <!-- Left: Experience Section -->
+      <div class="text">
+        <div class="topic"><h3>Experience</h3></div>
 
+        <!-- UBS -->
+        <div class="experience">
+          <img src="images/ubs-logo.jpg" alt="UBS Logo" class="company-logo">
+          <div class="exp-details">
+            <div class="exp-title">Data & AI Associate</div>
+            <div class="company-name">UBS | Jan 2025 -- Present</div>
+          </div>
+        </div>
+        <p>
+          • Designed and implemented fraud-detection validation frameworks to identify duplicate, irregular, 
+          and high-risk transactions, integrating checks into batch pipelines for proactive alerting.<br>
+          • Built ETL workflows for complex financial datasets using SQL, Python (Pandas, NumPy), enabling scalable analytics.<br>
+          • Conducted EDA, statistical analysis, and lightweight ML to uncover behavioral patterns supporting risk and product decisions.<br>
+          • Collaborated with stakeholders to refine payment frameworks, improving operational reliability.<br>
+          • Drove Git, Jira, and Confluence adoption, increasing team productivity by 15% through structured agile workflows.<br>
+        </p>
 
+        <!-- Credit Suisse -->
+        <div class="experience">
+          <img src="images/credit-suisse.png" alt="Credit Suisse Logo" class="company-logo">
+          <div class="exp-details">
+            <div class="exp-title">Software Engineer</div>
+            <div class="company-name">Credit Suisse | Nov 2021 -- Dec 2024</div>
+          </div>
+        </div>
+        <p>
+          • Built strong expertise across the Procure-to-Pay lifecycle and fintech operations in large banking systems.<br>
+          • Gathered business requirements and implemented enhancements to ERP batch jobs, backend scripts, and automated workflows.<br>
+          • Optimized SQL procedures and batch processes, reducing runtimes and minimizing downstream delays by 30%.<br>
+          • Mentored 3 junior associates as their designated buddy, supporting technical growth and knowledge transfer.<br>
+          • Designed monitoring and failover mechanisms to strengthen transaction pipeline reliability and reduce operational risk.<br>
+        </p>
+      </div>
 
-     <div class="boxes">
-       <div class="box">
-         <div class="topic">Python, C, C++</div>
-        
-       </div>
-       <div class="box">
-         <div class="topic">HTML, CSS, JavaScript</div>
-        
-       </div>
-       <div class="box">
-         <div class="topic">SQL, Oracle ERP</div>
-         
-       </div>
-       <div class="box">
-         <div class="topic">Machine Learning, Aritificial Intelligence</div>
-        
-       </div>
-       <div class="box">
-         <div class="topic">Big data- Spark, Hadoop</div>
-         
-       </div>
-       <div class="box">
-         <div class="topic">Cloud Computing - Azure(AI-900, DP-900, AZ-900 certified)</div>
-        
-       </div>
-       <div class="box">
-         <div class="topic">OOPs, DS & Algo</div>
-         
-       </div>
-       <div class="box">
-         <div class="topic">Power BI, Tableau</div>
-         
-       <div class="box">
-         <div class="topic">Business Analysis, Team Management</div>
-      
-         
-       </div>
-       </div>
-     </div>
-   </div>
- </div>
+      <!-- Right: Skills Section -->
+      <div class="skills-section">
+        <div class="topic"><h3>Skills</h3></div>
+
+        <div class="boxes">
+          <div class="box">Python, Pandas, NumPy</div>
+          <div class="box">SQL, Excel, MySQL, Oracle ERP</div>
+          <div class="box">Data Analysis, EDA</div>
+          <div class="box">Cloud Computing, ML</div>
+          <div class="box">Risk Analytics, Statistics & Modeling</div>
+          <div class="box">Power BI, Tableau</div>
+          <div class="box">Agile, Jira, Git, Confluence</div>
+          <div class="box">Payments & FinTech Domain Knowledge</div>
+          <div class="box">Revenue & Fraud Analytics</div>
+          <div class="box">ETL, Automation</div>
+          <div class="box">Collaboration & Mentorship</div>
+		  <div class="box">Stakeholder Management</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
-
-
 
 
 
@@ -190,49 +169,87 @@
      <div class="boxes">
        <div class="box">
          <div class="icon">
-           <i class="fas fa-desktop"></i>
-       </div>
-       <div class="topic">My Portfolio</div>
-       <p>This project illustrates my background, my eduaction, projects made and tech stack knowledge. Build with HTML and CSS.</p><br>
-	<a href = "#"><b>Portfolio</b></a>
-       </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-plane"></i>
-         </div>
-       <div class="topic">Travel Website-Triping</div>
-       <p>This Website is a Travel Booking site through which we can choose our journey date and also shows packages, reviwes and services provided by a typical Travel company. Build with HTML, CSS, JavaScript.</p><br>
-	<a href = "https://priti-khatri.github.io/TravelPage/" target="_blank"><b>Tripping- A travel site</b></a>
-       </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-paint-brush"></i>
-       </div>
-       <div class="topic">Product Landing Page- Sneaker Inc WEbapp</div>
-       <p>A fully responsive website with various features and listed products. Mobile-Friendly also.Deployed on real-time environment </p><br>
-	<a href = "https://priti-khatri.github.io/Product-Page/" target="_blank"><b>Visit Site</b></a>
-     </div>
-       <div class="box">
-         <div class="icon">
            <i class="fas fa-chart-line"></i>
        </div>
-       <div class="topic">Emoji-ladder Game</div>
-       <p>A game where an emoji can pass the levels by rising on the ladder. Rank goes increasing by passing the levels.</p><br>
-	<a href="https://github.com/priti-khatri/emoji-ladder-game" target="_blank"><b>Link</b></a>
-     </div>
+       <div class="topic">Netflix Revenue Insights</div>
+       <p>A data analytics project that visualizes Netflix’s global revenue trends and uses anomaly detection to uncover unusual performance patterns across regions.</p><br>
+	<a href = "https://netflix-global-revenue-with-anomaly-detection-insights.streamlit.app/" target="_blank"><b>Netflix Revenue Insights</b></a>
+       </div>
        <div class="box">
          <div class="icon">
-           <i class="fas fa-smile"></i>
+           <i class="fas fa-desktop"></i>
+         </div>
+       <div class="topic">FinWise</div>
+       <p>A ChatGPT-powered finance chatbot that simplifies money, investing, and financial learning.</p><br>
+	<a href = "https://genz-finwise.streamlit.app/" target="_blank"><b>FinWise Chatbot</b></a>
        </div>
-       <div class="topic">Face-recognition using ML</div>
-       <p>Recognition of face of a human by using Python libraries. The model is trained on a dataset to recognise a human face</p><br>
-     </div>
-       
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-shoe-prints"></i>
+       </div>
+       <div class="topic">Adidas Product Intelligence</div>
+       <p>An intelligent Streamlit dashboard that reveals insights from Adidas product data using ML and interactive visualizations. </p><br>
+	<a href = "https://adidas-retail-analytics.streamlit.app/" target="_blank"><b>Dashboard Link</b></a>
+     </div>       
 
        
    </div>
    </div>
  </section>
+
+
+
+<!-- Certifications Section -->
+<section class="certifications" id="certifications">
+  <div class="content">
+    <div class="title"><span>Certifications</span></div>
+
+    <div class="cert-boxes">
+      <div class="cert-item">
+        <img src="images/CE-certificate.png" alt="CE-certificate" onclick="openLightbox('images/CE-certificate.png')">
+        <p>UBS - Certified Engineer</p>
+      </div>
+
+
+      <div class="cert-item">
+        <img src="images/coursera-problem-solving.png" alt="coursera-problem-solving" onclick="openLightbox('images/coursera-problem-solving.png')">
+        <p>UCDAVIS - Problem Solving</p>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/AI-900.png" alt="AI-900" onclick="openLightbox('images/AI-900.png')">
+        <p>Azure Artifical Intelligence</p>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/Data-Science-Bootcamp.png" alt="Data-Science-Bootcamp" onclick="openLightbox('images/Data-Science-Bootcamp.png')">
+        <p>Data Science Bootcamp</p>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/Cloud computing.png" alt="Cloud computing" onclick="openLightbox('images/Cloud computing.png')">
+        <p>Cloud computing</p>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/AZ-900.png" alt="AZ-900" onclick="openLightbox('images/AZ-900.png')">
+        <p>Azure Fundamentals</p>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/python-cc.png" alt="python-cc" onclick="openLightbox('images/python-cc.png')">
+        <p>IBM -Python Certification </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="">
+</div>
+
 
 <!-- Contact Me section Start -->
 <section class="contact" id="contact">
@@ -251,17 +268,10 @@
 <!-- Footer Section Start -->
 <footer>
   <div class="text">
-    <span>Created By <a href="#">Priti Khatri</a> | &#169; 2021</span>
+    <span>Created By <a href="#">Priti Khatri</a> | &#169; 2025</span>
   </div>
 </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-

@@ -146,26 +146,59 @@ nav.sticky .menu-btn{
   margin: 5px 0;
   color: #0E2431;
 }
-.home .button{
-  margin: 14px 0;
+/* Modern Premium Button */
+.home .button {
+  margin: 20px 0;
 }
-.home .button button{
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 25px;
-  font-weight: 400;
-  background: #4070f4;
+
+.home .button button {
+  padding: 14px 34px;
+  font-size: 22px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* soft pastel purple-pink */
   color: #fff;
+
   cursor: pointer;
-  border: 2px solid transparent;
-  transition: all 0.4s ease;
+  box-shadow: 0px 6px 18px rgba(161, 140, 209, 0.35);
+  transition: all 0.3s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
 }
-.home .button button:hover{
-  border-color: #4070f4;
-  background-color: #fff;
-  color: #4070f4;
+
+/* Hover effect (smooth lift + darker glow) */
+.home .button button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 25px rgba(161, 140, 209, 0.45);
 }
+
+/* Ripple effect */
+.home .button button:active {
+  transform: scale(0.97);
+}
+
+/* Optional ripple animation */
+.home .button button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.home .button button:active::after {
+  width: 180px;
+  height: 180px;
+}
+
 
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
@@ -215,7 +248,7 @@ section .title span::after{
   width: 45%;
 }
 .about{
-  background-color: #F4C2C2;
+  background-color: #FDE2E2;
 }
 .about .left img{
   height: 400px;
@@ -236,133 +269,345 @@ section  .topic{
   text-align: justify;
   color: #0E2431;
 }
-section .button{
-  margin: 16px 0;
-}
-section .button button{
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 25px;
-  font-weight: 400;
-  background: #4070f4;
-  color: #fff;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-section .button button:hover{
-  border-color: #4070f4;
-  background-color: #fff;
-  color: #4070f4;
+/* Modern Section Button (Premium Pastel Style) */
+section .button {
+  margin: 22px 0;
 }
 
- /* My Skills CSS */
- .skills{
-   background: #d5f4e6;
- }
- .skills .content{
-   padding: 40px 0;
- }
- .skills .skills-details{
-   display: flex;
-   justify-content: space-between;
-   align-items: left;
- }
- .skills-details .text{
-   width: 50%;
-   text-align: left;
- }
- .skills-details p{
-   color: #0E2431;
-   text-align: left;
-   font-size: 15px;
-   margin-left: 25px;
- }
-.skills .skills-details .experience{
-  display: flex;
-  align-items: left;
-  margin: 0 1px;
-}
-.skills-details .experience .num{
-  color: #c1502e;
+section .button button {
+  padding: 12px 30px;
   font-size: 20px;
-  align-text: left;
-}
-.skills-details .experience .exp{
-  color: #c1502e;
-  margin-left: 2px;
-  font-size: 18px;
   font-weight: 500;
-  margin: 0 1px;
-  align-text: left;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #b9c6ff, #e7ceff); /* cool pastel lilac + lavender */
+  color: #fff;
+
+  border: none;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 15px rgba(145, 115, 255, 0.25);
+  transition: all 0.3s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
 }
-.skills-details .boxes{
-  width: 35%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+/* Button hover (soft lift + shadow glow) */
+section .button button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 22px rgba(145, 115, 255, 0.35);
 }
-.skills-details .box{
-  width: 100%;
-  margin: 10px 0;
+
+/* Ripple effect */
+section .button button:active {
+  transform: scale(0.97);
 }
-.skills-details .boxes .topic{
-  font-size: 20px;
+
+section .button button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+section .button button:active::after {
+  width: 180px;
+  height: 180px;
+}
+
+
+/* My Skills CSS */
+/* SECTION BACKGROUND */
+.skills {
+  background: #eafaf3;
+  padding: 40px 0;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* MAIN TITLE */
+.title span {
+  font-size: 24px;
+  font-weight: bold;
   color: #50394c;
-  align-text: right;
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* LAYOUT STRUCTURE */
+.skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* ---------------------------------- */
+/* LEFT SECTION – EXPERIENCE */
+/* ---------------------------------- */
+
+.text {
+  width: 65%; /* Increased space for experience */
+}
+
+.text .topic h3 {
+  font-size: 22px;
+  color: #50394c;
+  margin-bottom: 10px;
+}
+
+/* EXPERIENCE ENTRY */
+.experience {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+.exp-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #c1502e;
+}
+
+.company-name {
+  font-size: 14px;
+  color: #50394c;
+}
+
+.text p {
+  font-size: 14px;
+  color: #0E2431;
+  margin: 10px 0 25px 28px;
+  line-height: 1.45;
+}
+
+/* ---------------------------------- */
+/* RIGHT SECTION – SKILLS */
+/* ---------------------------------- */
+
+.skills-section {
+  width: 30%;        /* reduced width */
+  padding-left: 20px; /* shift skills to the right */
+}
+
+.skills-section .topic h3 {
+  font-size: 22px;
+  color: #50394c;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* SKILL BOXES – single column */
+.skills-section .boxes {
+  display: flex;
+  flex-direction: column; /* One box per row */
+  gap: 12px;
+}
+
+/* SKILL BOX */
+.skills-section .box {
+  width: 100%; /* Full width row */
+  background: #ffffff;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 14px;
+  color: #50394c;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.12);
+  transition: 0.2s ease;
+}
+
+/* Hover effect */
+.skills-section .box:hover {
+  background: #f2fff8;
+  transform: translateY(-2px);
 }
 
 
 
-/* My Services CSS */
-.services{
-  background-color: #E8DAEF;
+
+/* Projects Section */
+.services {
+  background-color: #F5EAF8; 
+  padding: 60px 0;
 }
-.services .boxes{
+
+.services .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
-.services .boxes .box{
-  margin: 20px 0;
-  width: calc(100% / 3 - 20px);
+
+.services .boxes .box {
+  margin: 20px 10px;
+  width: 30%;
   text-align: center;
   border-radius: 12px;
-  padding: 30px 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-  cursor: default;
-  transition: all 0.4s ease;
+  padding: 25px 15px;
+  background: linear-gradient(135deg, #f9e8ff, #e8daef); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
 }
-.services .boxes .box:hover{
-  background: #4070f4;
-  color: #fff;
+
+/* Different gradients for variety */
+.services .boxes .box:nth-child(1) {
+  background: linear-gradient(135deg, #ffd9d9, #e8daef); 
 }
-.services .boxes .box .icon{
+
+.services .boxes .box:nth-child(2) {
+  background: linear-gradient(135deg, #d6f0ff, #e8daef);
+}
+.services .boxes .box:nth-child(3) {
+  background: linear-gradient(135deg, #fff2d6, #e8daef);
+}
+
+/* Hover effects */
+.services .boxes .box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling */
+.services .boxes .box .icon {
   height: 50px;
   width: 50px;
-  background: #4070f4;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
   font-size: 18px;
   color: #fff;
   margin: 0 auto 10px auto;
+  background: linear-gradient(135deg, #9b59b6, #8e44ad); 
   transition: all 0.4s ease;
 }
-.boxes .box:hover .icon{
+
+.boxes .box:hover .icon {
   background-color: #fff;
-  color: #4070f4;
+  color: #8e44ad;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
-  color: #0E2431;
-  transition: all 0.4s ease;
+
+/* Links */
+.services .boxes .box a {
+  color: #8e44ad;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.services .boxes .box:hover a {
   color: #fff;
 }
+
+/* Certifications Section 
+.certifications{
+  background-color: #fef3e6;
+  padding: 40px 0;
+}
+.certifications .cert-boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.certifications .cert-boxes img{
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.certifications .cert-boxes img:hover{
+  transform: scale(1.05);
+}     */
+
+
+/* Certifications Section */
+.certifications {
+  background-color: #fef3e6; /* light pastel pink */
+  padding: 60px 0;
+}
+
+.cert-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.cert-item {
+  text-align: center;
+}
+
+.cert-item img {
+  width: 190px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-item img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+.cert-item p {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #4a4a4a;
+}
+
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+  animation: lightboxFade 0.25s ease;
+}
+
+/* Smooth fade-in animation */
+@keyframes lightboxFade {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+
 
 
 /* Contact Me CSS */
@@ -379,23 +624,32 @@ section .button button:hover{
   margin: auto;
 }
 
-/* Footer CSS */
-footer{
+footer {
   background: #4070f4;
   padding: 15px 0;
-  text-align: center;
   font-family: 'Poppins', sans-serif;
+  display: flex;            /* use flex */
+  justify-content: center;  /* horizontally center content */
+  align-items: center;      /* vertically center content if needed */
+  text-align: center;       /* fallback */
 }
-footer .text span{
+
+footer .text {
+  display: inline-block;    /* ensures width fits content */
+}
+
+footer .text span {
   font-size: 17px;
   font-weight: 400;
   color: #fff;
 }
-footer .text span a{
+
+footer .text span a {
   font-weight: 500;
-  color: #FFF;
+  color: #fff;
 }
-footer .text span a:hover{
+
+footer .text span a:hover {
   text-decoration: underline;
 }
 /* Scroll TO Top Button CSS */
@@ -521,7 +775,6 @@ footer .text span a:hover{
     color: #D2B4DE;
   }
 }
-
 
 
 
